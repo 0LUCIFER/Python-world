@@ -6,7 +6,7 @@ print("*******************By Rajdip Paul****************************")
 
 print("###################### Welcome #################################")
 
-#define menu function
+#define menu function. Use this function if you want to display the menu after every user input
 #def sh_menu():                                                                    
 print("Menu:")
 print("Press 1 to Add item to list")
@@ -15,7 +15,7 @@ print("Press 3 to View the TO DO list")
 print("Print 4 to Exit the App")
 
 while user_input!=4:
-    #sh_menu()
+    #sh_menu(). Try using this function also
     user_input=input('Enter your choice:')
     if user_input=='1':
         item=input("What do you want to add?")
