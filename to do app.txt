@@ -1,0 +1,42 @@
+user_input=None
+data=[]
+print("____________________The To Do List App____________________________")
+
+print("*******************By Rajdip Paul****************************")
+
+print("###################### Welcome #################################")
+
+#define menu function
+#def sh_menu():                                                                    
+print("Menu:")
+print("Press 1 to Add item to list")
+print("Press 2 to Remove item from list")
+print("Press 3 to View the TO DO list")
+print("Print 4 to Exit the App")
+
+while user_input!=4:
+    #sh_menu()
+    user_input=input('Enter your choice:')
+    if user_input=='1':
+        item=input("What do you want to add?")
+        data.append(item)
+        for item in data:
+            print(item,"added to list successfully")
+    elif user_input=='2':
+        item=input('What do you want to remove?')
+        if item in data:
+            data.remove(item)
+            print(item,"successfully removed")
+        else:
+             print('Item does not exist in list')
+    elif user_input=='3':
+        print("This is your list")
+        for item in data:
+            print(item)
+    elif user_input=='4':
+        print("Goodbye!!")
+        break
+    else:
+        print("Enter a number among 1, 2, 3, 4 ")
+                
+
